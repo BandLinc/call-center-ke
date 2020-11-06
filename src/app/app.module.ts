@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { KpisComponent } from './kpis/kpis.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RosterComponent } from './roster/roster.component';
+import { AddRosterComponent } from './add-roster/add-roster.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KpisComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    RosterComponent,
+    AddRosterComponent
   ],
   imports: [
     BrowserModule,

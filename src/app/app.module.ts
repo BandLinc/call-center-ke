@@ -1,3 +1,4 @@
+import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,13 +17,10 @@ import { AddRosterComponent } from './add-roster/add-roster.component';
     FooterComponent,
     NavbarComponent,
     RosterComponent,
-    AddRosterComponent
+    AddRosterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

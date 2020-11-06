@@ -10,14 +10,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RosterComponent } from './roster/roster.component';
 import { AddRosterComponent } from './add-roster/add-roster.component';
 
-//Define Routes
-const routes: Routes = [
-  { path: '', component: KpisComponent },
-  { path: 'kpis', component: KpisComponent },
-  { path: 'roster', component: RosterComponent },
-  { path: 'addroster', component: AddRosterComponent },
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,9 +19,8 @@ const routes: Routes = [
     RosterComponent,
     AddRosterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [RouterModule],
 })
 export class AppModule {}

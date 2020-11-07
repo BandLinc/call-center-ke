@@ -7,6 +7,6 @@ h4,
 h5 {
   font-family: "Raleway", sans-serif;
 }
-#fontfamily {
-  font-family: "Raleway", sans-serif;
+#fontbold {
+  font-weight: bold;
 }

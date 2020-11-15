@@ -1,3 +1,4 @@
+import { KpiService } from './services/kpi.service';
 import { RosterService } from './services/roster.service';
 import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
@@ -24,7 +25,7 @@ import { FormatDatePipe } from './pipes/format-date.pipe';
     FormatDatePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [RosterService],
+  providers: [RosterService, KpiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

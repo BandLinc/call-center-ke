@@ -1,12 +1,11 @@
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5 {
+html, body, h1, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
 }
+
 #fontbold {
   font-weight: bold;
+}
+
+.w3-col, .s8, .w3-bar, .w3-card {
+  align-content: center;
 }

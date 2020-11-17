@@ -1,3 +1,6 @@
+import { KpiService } from './services/kpi.service';
+import { RosterService } from './services/roster.service';
+import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -9,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RosterComponent } from './roster/roster.component';
 import { AddRosterComponent } from './add-roster/add-roster.component';
+import { FormatDatePipe } from './pipes/format-date.pipe';
 
 @NgModule({
   declarations: [
@@ -18,9 +22,10 @@ import { AddRosterComponent } from './add-roster/add-roster.component';
     NavbarComponent,
     RosterComponent,
     AddRosterComponent,
+    FormatDatePipe,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [RosterService, KpiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

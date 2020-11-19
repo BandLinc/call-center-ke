@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class KpiService {
   username: string;
   constructor(private httpclient: HttpClient) {
-    this.username = 'Jmbaya';
+    this.username = 'cblondelle1';
   }
 
   getKpis(): Observable<any> {

@@ -113,7 +113,7 @@
         style="width: 100%; height: 150px"
       >
         <div class="w3-left"><i class="fa fa-check-square-o w3-large"></i></div>
-        <h3>93</h3>
+        <h3>{{ kpis.NotReady_M }}</h3>
         <div class="w3-clear"></div>
         <h5>Not Ready</h5>
       </button>
@@ -135,7 +135,7 @@
         style="width: 100%; height: 150px"
       >
         <div class="w3-left"><i class="fa fa-thumbs-o-up w3-large"></i></div>
-        <h3>90</h3>
+        <h3>{{ kpis.FCR }}</h3>
         <div class="w3-clear"></div>
         <h5>FCR</h5>
       </button>
@@ -157,7 +157,7 @@
         style="width: 100%; height: 150px"
       >
         <div class="w3-left"><i class="fa fa-phone-square w3-large"></i></div>
-        <h3>60</h3>
+        <h3>{{ kpis.HoldTime_S }}</h3>
         <div class="w3-clear"></div>
         <h5>Hold Time</h5>
       </button>
@@ -180,17 +180,23 @@
           <tr>
             <td><i class="fa fa-clock-o w3-text-blue w3-large"></i></td>
             <td>AHT</td>
-            <td><i>3 mins</i></td>
+            <td>
+              <i>{{ kpis.AHT }} mins</i>
+            </td>
           </tr>
           <tr>
             <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
             <td>Adherence</td>
-            <td><i>96 %</i></td>
+            <td>
+              <i>{{ kpis.Adherence }} %</i>
+            </td>
           </tr>
           <tr>
             <td><i class="fa fa-hourglass-2 w3-text-yellow w3-large"></i></td>
             <td>Hold Time</td>
-            <td><i>7 mins</i></td>
+            <td>
+              <i>{{ kpis.HoldTime_S }} sec</i>
+            </td>
           </tr>
           <tr>
             <td><i class="fa fa-tty w3-text-red w3-large"></i></td>
@@ -200,12 +206,16 @@
           <tr>
             <td><i class="fa fa-tachometer w3-text-blue w3-large"></i></td>
             <td>NPS</td>
-            <td><i>28</i></td>
+            <td>
+              <i>{{ kpis.NPS }}</i>
+            </td>
           </tr>
           <tr>
             <td><i class="fa fa-phone-square w3-text-red w3-large"></i></td>
             <td>Short Calls</td>
-            <td><i>5</i></td>
+            <td>
+              <i>{{ kpis.Shortcalls }}</i>
+            </td>
           </tr>
           <tr>
             <td><i class="fa fa-line-chart w3-text-green w3-large"></i></td>

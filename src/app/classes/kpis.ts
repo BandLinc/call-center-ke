@@ -12,4 +12,8 @@ export class Kpis {
   NPS: string;
   Shortcalls: string;
   Satisfaction: string;
+  FCR: string;
+  NotReady_M: string;
+  HoldTime_S: string;
+  Resolution: string;
 }

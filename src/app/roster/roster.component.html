@@ -5,13 +5,13 @@
       <!--Overall Info-->
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <strong>Operations Manager</strong> - Lincoln Band
+          <strong>Operations Manager</strong> - {{ opManager }}
         </li>
         <li class="list-group-item">
-          <strong>Morning Team Lead</strong> - Billy Chepkemoi
+          <strong>Morning Team Lead</strong> - {{ morningLead }}
         </li>
         <li class="list-group-item">
-          <strong>Afternoon Team Lead</strong> - Peter Mbugua
+          <strong>Afternoon Team Lead</strong> - {{ afternoonLead }}
         </li>
       </ul>
       <!--Overall Info-->
@@ -24,40 +24,34 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Location</th>
-        <th scope="col">Team Lead</th>
-        <th scope="col">Support Channel</th>
+        <th scope="col">TeamLead</th>
+        <th scope="col">SupportChannel</th>
         <th scope="col">Shift</th>
-        <th scope="col">Teams</th>
-        <th scope="col">Folder</th>
+        <th scope="col">TEAMs</th>
+        <th scope="col">FOLDER</th>
+        <th scope="col">Date</th>
+        <th scope="col">Submitter</th>
+        <th scope="col">SubmitTime</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngFor="let dutyroster of lstRosters">
         <th scope="row">1</th>
-        <td>JCC</td>
-        <td>EK755 John Otto</td>
-        <td>Support from Home</td>
-        <td>5AM-2PM</td>
-        <td>5AM-2PM</td>
-        <td>5AM-2PM</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>JCC</td>
-        <td>EK755 John Otto</td>
-        <td>Support from Home</td>
-        <td>5AM-2PM</td>
-        <td>5AM-2PM</td>
-        <td>5AM-2PM</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>JCC</td>
-        <td>EK755 John Otto</td>
-        <td>Support from Home</td>
-        <td>5AM-2PM</td>
-        <td>5AM-2PM</td>
-        <td>5AM-2PM</td>
+        <td>{{ dutyroster.Location }}</td>
+        <td>{{ dutyroster.TeamLead }}</td>
+        <td>{{ dutyroster.SupportChannel }}</td>
+        <td>{{ dutyroster.Shift }}</td>
+        <td>{{ dutyroster.TEAMs }}</td>
+        <td>{{ dutyroster.FOLDER }}</td>
+        <td>{{ dutyroster.Date.substr(0, 10) }}</td>
+        <td>{{ dutyroster.Submitter }}</td>
+        <td>
+          {{
+            dutyroster.SubmitTime.substr(0, 10) +
+              " " +
+              dutyroster.SubmitTime.substr(11, 8)
+          }}
+        </td>
       </tr>
     </tbody>
   </table>

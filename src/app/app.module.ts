@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RosterComponent } from './roster/roster.component';
 import { AddRosterComponent } from './add-roster/add-roster.component';
+import { AddingIssuesComponent } from './adding-issues/adding-issues.component';
+import { GeneralStatsComponent } from './general-stats/general-stats.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { AddRosterComponent } from './add-roster/add-roster.component';
     NavbarComponent,
     RosterComponent,
     AddRosterComponent,
+    AddingIssuesComponent,
+    GeneralStatsComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

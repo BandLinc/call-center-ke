@@ -27,6 +27,7 @@ export class RosterComponent implements OnInit {
         if (this.lstRosters[i].SupportChannel === 'Afternoon Team Lead') {
           this.afternoonLead = this.lstRosters[i].TeamLead;
         }
+        //Calculation
         if (this.lstRosters[i].SupportChannel === 'Morning Team Lead') {
           this.morningLead = this.lstRosters[i].TeamLead;
         }

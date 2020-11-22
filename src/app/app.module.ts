@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RosterComponent } from './roster/roster.component';
 import { AddRosterComponent } from './add-roster/add-roster.component';
 import { FormatDatePipe } from './pipes/format-date.pipe';
+import { DailyUpdatesComponent } from './daily-updates/daily-updates.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormatDatePipe } from './pipes/format-date.pipe';
     RosterComponent,
     AddRosterComponent,
     FormatDatePipe,
+    DailyUpdatesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [RosterService, KpiService],

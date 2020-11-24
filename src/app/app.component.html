@@ -1,7 +1,9 @@
-<div class="w3-theme-l5" id="fontfamily">
-  <!-- Navbar -->
+<div *ngIf="!isLoggedIn">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="w3-theme-l5" id="fontfamily" *ngIf="isLoggedIn">
   <app-navbar></app-navbar>
-  <!-- Overlay effect when opening sidebar on small screens -->
   <div
     class="w3-overlay w3-hide-large w3-animate-opacity"
     onclick="w3_close()"
@@ -9,14 +11,7 @@
     title="close side menu"
     id="myOverlay"
   ></div>
+  <router-outlet></router-outlet>
 
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
-    <!--Add Router Link Here-->
-    <router-outlet></router-outlet>
-
-    <hr />
-    <app-footer></app-footer>
-    <!-- End page content -->
-  </div>
+  <hr />
 </div>

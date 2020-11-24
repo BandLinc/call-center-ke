@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./roster.component.css'],
 })
 export class RosterComponent implements OnInit {
+  counter: number = 0;
   lstRosters: Rosters[];
   opManager: string = '';
   afternoonLead: string = '';

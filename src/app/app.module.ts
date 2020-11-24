@@ -1,3 +1,4 @@
+import { NavService } from './services/nav.service';
 import { KpiService } from './services/kpi.service';
 import { RosterService } from './services/roster.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,7 +26,7 @@ import { FormatDatePipe } from './pipes/format-date.pipe';
     FormatDatePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [RosterService, KpiService],
+  providers: [RosterService, KpiService, NavService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

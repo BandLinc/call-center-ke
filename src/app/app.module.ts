@@ -1,3 +1,6 @@
+import { PendingissuesService } from './services/pendingissues.service';
+import { ManagersService } from './services/managers.service';
+import { KpitargetsService } from './services/kpitargets.service';
 import { NavService } from './services/nav.service';
 import { KpiService } from './services/kpi.service';
 import { RosterService } from './services/roster.service';
@@ -28,7 +31,14 @@ import { DailyUpdatesComponent } from './daily-updates/daily-updates.component';
     DailyUpdatesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [RosterService, KpiService, NavService],
+  providers: [
+    RosterService,
+    KpiService,
+    NavService,
+    KpitargetsService,
+    ManagersService,
+    PendingissuesService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

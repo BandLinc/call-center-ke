@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./roster.component.css'],
 })
 export class RosterComponent implements OnInit {
+  counter: number = 0;
   lstRosters: Rosters[];
   opManager: string = '';
   afternoonLead: string = '';
@@ -27,6 +28,7 @@ export class RosterComponent implements OnInit {
         if (this.lstRosters[i].SupportChannel === 'Afternoon Team Lead') {
           this.afternoonLead = this.lstRosters[i].TeamLead;
         }
+        //Calculation
         if (this.lstRosters[i].SupportChannel === 'Morning Team Lead') {
           this.morningLead = this.lstRosters[i].TeamLead;
         }

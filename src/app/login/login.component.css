@@ -5,12 +5,12 @@
 }
 
 /* reset code */
+
 html {
   scroll-behavior: smooth;
 }
 
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   color: #585858;
@@ -18,8 +18,7 @@ html {
 
 * {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .wrapper {
@@ -76,16 +75,12 @@ html {
   text-align: right;
 }
 
-button,
-input,
-select {
+button, input, select {
   -webkit-appearance: none;
   outline: none;
 }
 
-button,
-.btn,
-select {
+button, .btn, select {
   cursor: pointer;
 }
 
@@ -93,15 +88,7 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
+h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0;
   padding: 0;
 }
@@ -131,12 +118,7 @@ ol {
 
 .form-36-mian {
   background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.85),
-      rgba(255, 255, 255, 0)
-    ),
-    url(../images/women.jpg);
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.85), rgba(255, 255, 255, 0)), url(../images/llady.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   display: grid;
@@ -165,9 +147,7 @@ ol {
   margin-right: 5px;
 }
 
-.form-input input[type="text"],
-.form-input input[type="email"],
-.form-input input[type="password"] {
+.form-input input[type="text"], .form-input input[type="email"], .form-input input[type="password"] {
   background: transparent;
   border: none;
   outline: none;
@@ -257,8 +237,7 @@ button.btn {
   min-width: 100px;
 }
 
-.facebook,
-.google {
+.facebook, .google {
   font-weight: bold;
   display: block;
   width: 35px;
@@ -269,8 +248,7 @@ button.btn {
   border-radius: 50%;
 }
 
-.facebook span,
-.google span {
+.facebook span, .google span {
   display: block;
   line-height: 35px;
   color: #fff;
@@ -285,8 +263,7 @@ button.btn {
   background: #dd4b39;
 }
 
-.facebook:hover,
-.google:hover {
+.facebook:hover, .google:hover {
   opacity: 0.9;
 }
 
@@ -313,6 +290,7 @@ p.signup a:hover {
 }
 
 /* The container */
+
 .check-remaind {
   display: block;
   position: relative;
@@ -325,6 +303,7 @@ p.signup a:hover {
 }
 
 /* Hide the browser's default checkbox */
+
 .check-remaind input {
   position: absolute;
   opacity: 0;
@@ -334,6 +313,7 @@ p.signup a:hover {
 }
 
 /* Create a custom checkbox */
+
 .checkmark {
   position: absolute;
   top: 0px;
@@ -344,16 +324,19 @@ p.signup a:hover {
 }
 
 /* On mouse-over, add a grey background color */
-.check-remaind:hover input ~ .checkmark {
+
+.check-remaind:hover input~.checkmark {
   background-color: #e1e9f0;
 }
 
 /* When the checkbox is checked, add a blue background */
-.check-remaind input:checked ~ .checkmark {
+
+.check-remaind input:checked~.checkmark {
   background-color: var(--theme-color);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
   content: "";
   position: absolute;
@@ -361,11 +344,13 @@ p.signup a:hover {
 }
 
 /* Show the checkmark when checked */
-.check-remaind input:checked ~ .checkmark:after {
+
+.check-remaind input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
+
 .check-remaind .checkmark:after {
   left: 5px;
   top: 2px;

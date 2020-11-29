@@ -1,55 +1,29 @@
 <div class="w3-bar w3-card w3-top w3-white w3-large" style="z-index: 4">
   <div class="w3-bar w3-card w3-left-align w3-large">
     <a href="#" class="w3-bar-item w3-button w3-padding-medium w3-white">
-      <img
-        src="/assets/Logo.jpg"
-        class="w3-circle"
-        style="height: 23px; width: 23px"
-      />
+      <img src="/assets/Logo.jpg" class="w3-circle" style="height: 23px; width: 23px" />
       CM: Stats Dashboard
     </a>
 
-    <a
-      href="#"
-      class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
-      title="Admin"
-    >
-      <img
-        src="/assets/Logo.jpg"
-        class="w3-circle"
-        style="height: 23px; width: 23px"
-      />
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Admin">
+      <img src="/assets/Logo.jpg" class="w3-circle" style="height: 23px; width: 23px" />
     </a>
   </div>
 </div>
 
 <!-- Sidebar/menu -->
-<nav
-  class="w3-sidebar w3-card w3-collapse w3-white w3-animate-left"
-  style="z-index: 3; width: 300px; margin-top: 24px"
-  id="mySidebar"
->
+<nav class="w3-sidebar w3-card w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px; margin-top: 24px"
+  id="mySidebar">
   <br />
   <div class="w3-container w3-row">
     <div class="w3-col s4">
-      <img
-        src="/assets/Logo.jpg"
-        class="w3-circle w3-margin-right"
-        style="width: 46px"
-      />
+      <img src="/assets/Logo.jpg" class="w3-circle w3-margin-right" style="width: 46px" />
     </div>
     <div class="w3-col s8 w3-bar w3-card">
-      <span>Welcome, <strong>Mike</strong></span
-      ><br />
-      <a class="w3-bar-item w3-button" title="KPIs" routerLink="kpis"
-        ><i class="fa fa-pie-chart"></i
-      ></a>
-      <a class="w3-bar-item w3-button" title="Duty Roster" routerLink="roster"
-        ><i class="fa fa-table"></i
-      ></a>
-      <a class="w3-bar-item w3-button" title="Add Roster" routerLink="addroster"
-        ><i class="fa fa-plus"></i
-      ></a>
+      <span>Welcome, <strong>Mike</strong></span><br />
+      <a class="w3-bar-item w3-button" title="KPIs" routerLink="kpis"><i class="fa fa-pie-chart"></i></a>
+      <a class="w3-bar-item w3-button" title="Duty Roster" routerLink="roster"><i class="fa fa-table"></i></a>
+      <a class="w3-bar-item w3-button" title="Add Roster" routerLink="addroster"><i class="fa fa-plus"></i></a>
     </div>
   </div>
   <hr />
@@ -59,29 +33,20 @@
   <!-- Accordion -->
   <div class="w3-card w3-round">
     <div class="w3-white">
-      <button
-        onclick="myFunction('Demo1')"
-        class="w3-button w3-block w3-theme-l1 w3-left-align"
-      >
+      <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align">
         <i class="fa fa-user-o fa-fw w3-margin-right"></i> Shift Manager
       </button>
       <div id="Demo1" class="w3-hide w3-container">
         <p>{{ opManager }}</p>
       </div>
-      <button
-        onclick="myFunction('Demo2')"
-        class="w3-button w3-block w3-theme-l1 w3-left-align"
-      >
+      <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">
         <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Morning
         Lead
       </button>
       <div id="Demo2" class="w3-hide w3-container">
         <p>{{ morningLead }}</p>
       </div>
-      <button
-        onclick="myFunction('Demo3')"
-        class="w3-button w3-block w3-theme-l1 w3-left-align"
-      >
+      <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align">
         <i class="fa fa-users fa-fw w3-margin-right"></i> Evening Lead
       </button>
       <div id="Demo3" class="w3-hide w3-container">
